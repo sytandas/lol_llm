@@ -1,5 +1,5 @@
 # lol-llm
-funny large language model  
+funny way to implement large language model  
 
 
 # License 
