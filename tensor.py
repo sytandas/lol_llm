@@ -17,7 +17,7 @@ class Function:
   def backward(self, *args, **kwargs): raise RuntimeError(f"backward not implemented for {type(self)}")
 
 class Tensor:
-  __slots__ = "lazydata", "requires_grad", "grad", "_ctx"
+  __slots__ = "lazyd", "req_grad", "grad", "_ctx"
   __deletable__ = ('_ctx',)
   training: ClassVar[bool] = False
   no_grad: ClassVar[bool] = False
