@@ -21,4 +21,5 @@ class Tensor:
   __deletable__ = ('_ctx',)
   training: ClassVar[bool] = False
   no_grad: ClassVar[bool] = False
-  # default_type: ClassVar[DType] = dtypes.float32
+
+# default_type: ClassVar[DType] = dtypes.float32
