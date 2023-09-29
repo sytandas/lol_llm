@@ -1,5 +1,5 @@
 # lol-llm
-funny way to implement large language model  
+Abstration of large language model.
 
 # License 
 MIT
