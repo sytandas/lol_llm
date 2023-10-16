@@ -26,12 +26,12 @@ print(derivative_f_wrt_y)
 print(derivative_f_wrt_z)
 
 # let the inputs respond to the force/tug:
-
 step_size = 0.01 
 x += step_size * derivative_f_wrt_x
 y += step_size * derivative_f_wrt_y
 z += step_size * derivative_f_wrt_z
 
+# output circuit upgrade from the step_size
 q = forward_add(x, y)
 f = forward_mul(q, z)
 
