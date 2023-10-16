@@ -3,7 +3,7 @@ def forward(x, y):
 
 x = -2
 y = 3
-h = 0.00001
+h = 0.01
 out = forward(x, y)
 
 xph = x + h
