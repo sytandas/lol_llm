@@ -14,7 +14,7 @@ def forward(x, y):
 x = -2 
 y = 3
 
-tweek_amount = 0.01
+tweek_amount = 0.001
 best_out = float('-inf')
 best_x = x
 best_y = y
