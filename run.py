@@ -9,7 +9,7 @@ TOKEN_WHITELIST = [token.OP, token.NAME, token.NUMBER, token.STRING]
 
 def gen_stats(base_path="."):
   table = []
-  for path, _, files in os.walk(os.path.join(base_path, "tinygrad")):
+  for path, _, files in os.walk(os.path.join(base_path, "lol_llm")):
     for name in files:
       if not name.endswith(".py"): continue
       filepath = os.path.join(path, name)
