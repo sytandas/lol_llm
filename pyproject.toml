@@ -4,6 +4,3 @@
 # platforms, use cibuildwheel as apart fo your CI setup to build distribute wheels 
 # use twine for uploading distributions to PyPI
 
-[build-system]
-requires = ["setuptools>=40.8.0", "wheel"]
-build-backend = "setuptools.build_meta:__legacy__"
