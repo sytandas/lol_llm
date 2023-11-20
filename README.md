@@ -1,5 +1,5 @@
 # lol-llm
-Happy large language model.
+Abstraction of large language model.
 
 # License 
 MIT
