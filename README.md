@@ -1,5 +1,5 @@
 # lol-llm
-Abstraction of large language model.
+Abstraction of llm.
 
 # License 
 MIT
