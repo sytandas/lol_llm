@@ -1,5 +1,5 @@
 # lol-llm
-Abstraction of llm.
+Understanding llm.
 
 # License 
 MIT
