@@ -1,3 +1,3 @@
-# state of the art 7b - chat bot 
-# sampling 
-# test
+# 7b - chat bot 
+#1. sampling 
+#2. test
