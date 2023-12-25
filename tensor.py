@@ -22,4 +22,3 @@ class Tensor:
   training: ClassVar[bool] = False
   no_grad: ClassVar[bool] = False
 
-# default_type: ClassVar[DType] = dtypes.float32
