@@ -1,5 +1,5 @@
 # lol-llm
-Understanding llm.
+llm learning
 
 # License 
 MIT
