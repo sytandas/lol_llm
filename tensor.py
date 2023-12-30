@@ -17,8 +17,20 @@ class Function:
   def backward(self, *args, **kwargs): raise RuntimeError(f"backward not implemented for {type(self)}")
 
 class Tensor:
-  __slots__ = "lazyd", "req_grad", "grad", "_ctx"
+  __slots__ = "lazydata", "requires_grad", "grad", "_ctx"
   __deletable__ = ('_ctx',)
   training: ClassVar[bool] = False
+  class train:
+    def __init__(self, val=True): self.val = val
+    def __enter__(self): self.prev, Tensor.training = Tensor.training, self.val
+    def __exit__(self, exc_type: Any, exc_value: Any, traceback: Any): Tensor.training = self.prev
+
   no_grad: ClassVar[bool] = False
+  default_type: ClassVar[DType] = dtypes.float32
+  def __init__(self, data:Union[None, int, float, list, LazyBuffer, np.ndarray, bytes], device:Optional[str]=None, dtype:Optional[DType]=None, requires_grad:Optional[bool]=None):
+    assert dtype is None or isinstance(dtype, DType), f"invalid dtype {dtype}"
+    device = Device.canonicalize(device)
+    # tensors have gradients, buffers do not
+    self.grad: Optional[Tensor] = None
+
 
