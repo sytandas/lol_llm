@@ -1,5 +1,5 @@
 # lol-llm
-llm learning
+llm noob learning
 
 # License 
 MIT
