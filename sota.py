@@ -1,3 +1,2 @@
 # 7b - chat bot 
-#sampling 
-#test
+#sampling test
