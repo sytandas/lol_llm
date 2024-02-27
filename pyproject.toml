@@ -3,6 +3,3 @@
 # if you have binary extensions and want to distribute wheels for multiple
 # platforms, use cibuildwheel as apart fo your CI setup to build distribute wheels 
 # use twine for uploading distributions to PyPI
-
-
-
