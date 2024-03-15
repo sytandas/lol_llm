@@ -1,2 +1,2 @@
 # 7b - chat bot 
-# target - 12 march
+# done by 16 march
